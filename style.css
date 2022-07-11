@@ -1,0 +1,130 @@
+/* Css Grid */
+.box {
+    display: grid;
+    width: 750px;
+    height: 600px;
+    /* background-color: aqua; */
+    grid-template-columns: 200px 1fr 1fr;
+    grid-template-rows: 30px 1fr 1fr 50px;
+    grid-gap: 1rem;
+    grid-template-areas:
+      "header header header"
+      "sidebar content-1 content-1"
+      "sidebar content-2 content-3"
+      "footer footer footer";
+}
+
+.item {
+    background-color: #1eaafc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+}
+
+.header {
+    grid-area: header;
+}
+
+.sidebar {
+    grid-area: sidebar;
+}
+
+.content-1 {
+    grid-area: content-1;
+}
+
+.content-2 {
+    grid-area: content-2;
+}
+.content-3 {
+    grid-area: content-3;
+}
+
+.footer {
+    grid-area: footer;
+}
+
+.header {
+    background-color: green;
+    color: #fff;
+}
+
+.sidebar {
+    background-color: blue;
+    color: #fff;
+}
+
+.content-1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: yellow;
+    color: #000;
+}
+
+.content-2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: purple;
+    color: #000;
+}
+
+.content-3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: red;
+    color: #000;
+}
+
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: orange;
+    color: #000;
+}
+
+
+/* CSS Flexbox */
+
+.container {
+    display: flex;
+    /* Essa propriedade alinha os itens no começo */
+    /* justify-content: flex-start; */
+
+    /* Essa propriedade alinha os itens no final */
+    /* justify-content: flex-end; */
+
+    /* Essa propriedade alinha os itens no centro */
+    /* justify-content: center; */
+
+    /* os itens são distribuídos uniformemente na linha */
+    /* justify-content: space-between; */
+
+    /*os itens são distribuídos uniformemente na linha com espaço igual ao redor deles  */
+    /* justify-content: space-around; */
+    
+    /* distribui o espaço entre os itens uniformemente */
+    /* justify-content: space-evenly; */
+
+    align-items: stretch;
+    background-color: aqua;
+}
+
+.itens {
+    display: flex; 
+    width: 100px; 
+    height: 100px;
+    background-color: #0ad747;
+    justify-content: center;
+    margin: 10px;
+    border-radius: 12px;
+    box-shadow: 0 0 5px rgb(66, 66, 66);
+}
+
+#space {
+    margin: 60px;
+}
